@@ -3,13 +3,11 @@
 Class Home extends Controller
 {
     
-    function index($a = "",$b = "",$c = ""){
+    function index(){
 
-        show($a);
-        show($b);
-        show($c);
-
-        $this->view("home");
+        
+        $data['page_title'] = "Home";
+        $this->view("naturewood/index", $data);
 
     }
 
